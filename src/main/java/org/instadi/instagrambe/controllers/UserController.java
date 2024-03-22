@@ -1,4 +1,4 @@
-package org.instadi.instagrambe;
+package org.instadi.instagrambe.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.instadi.instagrambe.models.User;

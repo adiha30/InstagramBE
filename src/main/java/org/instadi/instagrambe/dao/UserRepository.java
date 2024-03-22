@@ -1,4 +1,4 @@
-package org.instadi.instagrambe;
+package org.instadi.instagrambe.dao;
 
 import org.instadi.instagrambe.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;

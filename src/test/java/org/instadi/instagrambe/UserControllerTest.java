@@ -1,6 +1,7 @@
 package org.instadi.instagrambe;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.instadi.instagrambe.controllers.UserController;
 import org.instadi.instagrambe.models.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
