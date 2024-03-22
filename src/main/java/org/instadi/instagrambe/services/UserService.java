@@ -2,12 +2,10 @@ package org.instadi.instagrambe.services;
 
 import org.instadi.instagrambe.UserRepository;
 import org.instadi.instagrambe.models.User;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.InvalidDataAccessApiUsageException;
 import org.springframework.stereotype.Service;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Service
 public class UserService {
