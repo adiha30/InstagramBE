@@ -19,17 +19,17 @@ import static com.google.common.truth.Truth.assertWithMessage;
 @RunWith(SpringRunner.class)
 @TestPropertySource(locations = "classpath:application-test.yml")
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.AUTO_CONFIGURED)
-public class UserOperationsTest {
+public class UserServiceTest {
 
     @Autowired
-    private UserService userService;
+    private UserService sut;
 
     @Test
     @Transactional
     public void testCreateUser() {
         User user = new User();
 
-        User createdUser = userService.register(user);
+        User createdUser = sut.register(user);
 
         Assertions.assertAll(
                 () -> assertWithMessage("User is null")
@@ -48,7 +48,7 @@ public class UserOperationsTest {
 
         Assertions.assertThrows(
                 InvalidDataAccessApiUsageException.class,
-                () -> userService.register(user)
+                () -> sut.register(user)
         );
     }
 }
